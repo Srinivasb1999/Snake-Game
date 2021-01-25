@@ -1,18 +1,18 @@
 // Select all the required DOM elements
 const grid = document.querySelector('.grid');
-const startButton = document.querySelector('#start');
+const startButton = document.querySelector('.start');
 const scoreDisplay = document.querySelector('#score');
-const gameOver = document.querySelector('#game-over');
+const gameOver = document.querySelector('.game-over');
 
 // Global Variable Declaration
 const squares = [];
 let currentSnake = [2, 1, 0];
 let direction = 1;
-const width = 10;
+const width =20;
 let appleIndex = 0;
 let score = 0;
-let intervalTime = 1000;
-let speedFactor = 0.95;
+let intervalTime = 600;
+let speedFactor = 0.85;
 let timerId = 0;
 
 // Creates a square Grid of side 'width'
