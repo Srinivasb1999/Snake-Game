@@ -1,20 +1,65 @@
 html,
 body {
+    position: relative;
     margin: 0;
     padding: 0;
+    background-color: black;
+    font-family: consolas, monospace;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -250px;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(63, 63, 63);
+    border-radius: 20px;
 }
 
 .square {
     width: 20px;
     height: 20px;
+    border-radius: 50%;
+}
+
+.ui {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button{
+    width: 170px;
+    height: 30px;
+    font-family: consolas;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+}
+
+.score-holder {
+    pointer-events: none;
+}
+
+.start {
+
+}
+
+.game-over{
+    color: white;
 }
 
 .snake {
@@ -22,9 +67,16 @@ body {
 }
 
 .head {
-    background-color: rgb(41, 179, 22);
+    background-color: rgb(55, 241, 30);
 }
 
 .apple {
-    background-color: blue;
+    background-color: rgb(216, 22, 22);
+}
+
+p {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
